@@ -2,21 +2,26 @@ import './App.css';
 import Todo from './componants/Todo';
 import AddCard from './componants/AddCard';
 import Counter from './componants/Counter';
+import Home from './componants/Home';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 function App() {
- 
-
-  // useEffect(() => {
-  //   console.log(cards); // Good for debugging
-  // }, [cards]);
-
+  
   return (
     <div className="App">
-      <Counter/>
-      <Todo/>
-      <AddCard/>
+      
+
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/todo" element={<Todo />} />
+          <Route path="/addcard" element={<AddCard />} />
+        </Routes>
+      </Router>
 
     </div>
+
   );
 }
 

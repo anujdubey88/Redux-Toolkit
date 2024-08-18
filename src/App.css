@@ -3,6 +3,17 @@
   padding: 0;
   background-color: aliceblue;
 }
+.App{
+  text-align: center;
+  margin-top: 5rem;
+
+}
+.button Link{
+  text-decoration: none;
+}
+.App h1{
+  margin: 3rem;
+}
 .Counter{
   text-align: center;
   margin: 3rem;
